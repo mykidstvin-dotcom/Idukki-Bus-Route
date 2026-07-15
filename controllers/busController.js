@@ -1,4 +1,4 @@
-const Bus = require("../models/Bus");
+const Bus = require("../models/bus");
 
 // Get all buses
 const getAllBuses = async (req, res) => {
