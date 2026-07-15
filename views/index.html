@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idukki Bus Route</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/hero.css">
+    <link rel="stylesheet" href="/css/routes.css">
+    <link rel="stylesheet" href="/css/timetable.css">
+    <link rel="stylesheet" href="/css/updates.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container">
+
+            <div class="logo">
+
+                <img src="/images/logo.png" alt="Logo">
+
+                <div class="logo-text">
+
+                    <h2>Idukki Bus Route</h2>
+
+                    <p>KSRTC & Private Bus Services</p>
+
+                </div>
+
+            </div>
+
+            <nav>
+
+                <a class="active" href="#">Home</a>
+                <a href="#">Routes</a>
+                <a href="#">Time Table</a>
+                <a href="#">Updates</a>
+                <a href="#">Contact</a>
+
+            </nav>
+
+            <a href="/login" class="login-btn">
+
+    <i class="fa-solid fa-user"></i>
+
+    Admin Login
+
+</a>
+<button id="themeToggle" class="theme-toggle">
+    🌙
+</button>
+        </div>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-badge">
+                🌿 Welcome to Idukki
+            </span>
+
+            <h1>
+
+                Travel Idukki,
+
+                <br>
+
+                <span>The Green Paradise</span>
+
+            </h1>
+
+            <p>
+
+                Find KSRTC and Private bus routes, timings and latest updates
+                across the beautiful hills of Idukki.
+
+            </p>
+           <!-- Search Card -->
+
+<div class="search-card">
+
+    <div class="input-group">
+
+    <label for="from">From</label>
+
+    <select id="from">
+
+        <option value="">Select Boarding Point</option>
+
+        <option>Adimali</option>
+        <option>Cheruthoni</option>
+        <option>Idukki</option>
+        <option>Kattappana</option>
+        <option>Kumily</option>
+        <option>Munnar</option>
+        <option>Nedumkandam</option>
+        <option>Peerumade</option>
+        <option>Thodupuzha</option>
+        <option>Vandiperiyar</option>
+
+    </select>
+
+</div>
+
+<div class="input-group">
+
+    <label for="to">To</label>
+
+    <select id="to">
+
+        <option value="">Select Destination</option>
+
+        <option>Adimali</option>
+        <option>Cheruthoni</option>
+        <option>Idukki</option>
+        <option>Kattappana</option>
+        <option>Kumily</option>
+        <option>Munnar</option>
+        <option>Nedumkandam</option>
+        <option>Peerumade</option>
+        <option>Thodupuzha</option>
+        <option>Vandiperiyar</option>
+
+    </select>
+
+</div>
+
+    <button id="searchBtn" class="search-btn">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        Search
+
+    </button>
+
+</div>
+
+<!-- Popular Routes -->
+
+<div class="popular-routes">
+
+    <span>Popular :</span>
+
+    <a href="#">Munnar</a>
+
+    <a href="#">Kattappana</a>
+
+    <a href="#">Kumily</a>
+
+    <a href="#">Thodupuzha</a>
+
+</div>
+        <!-- Hero Image -->
+
+        <div class="hero-image">
+
+            <img src="/images/ksrtc-bus.png" alt="KSRTC Bus">
+
+        </div>
+
+    </section>
+
+    <!-- Routes Section Starts Here -->
+     <section class="routes">
+    <div class="route-card">
+        <div class="route-icon">🏔️</div>
+        <div class="route-info">
+            <h3>Thodupuzha → Munnar</h3>
+            <p>Via Adimali</p>
+            <span>⏱ 2h 15m</span>
+        </div>
+        <button>→</button>
+    </div>
+
+    <div class="route-card">
+        <div class="route-icon">🌉</div>
+        <div class="route-info">
+            <h3>Kattappana → Kochi</h3>
+            <p>Via Kothamangalam</p>
+            <span>⏱ 3h 45m</span>
+        </div>
+        <button>→</button>
+    </div>
+
+    <div class="route-card">
+        <div class="route-icon">🌲</div>
+        <div class="route-info">
+            <h3>Adimali → Kumily</h3>
+            <p>Via Poopara</p>
+            <span>⏱ 1h 30m</span>
+        </div>
+        <button>→</button>
+    </div>
+
+    <div class="route-card">
+        <div class="route-icon">🍃</div>
+        <div class="route-info">
+            <h3>Kumily → Peermade</h3>
+            <p>Via Vandiperiyar</p>
+            <span>⏱ 45 min</span>
+        </div>
+        <button>→</button>
+    </div>
+</section>
+<section class="info-section">
+
+    <!-- Live Bus Map -->
+    <div class="info-card">
+        <h2>🗺️ Live Bus Map</h2>
+
+        <div class="map-box">
+            <div class="map-box">Map Coming Soon</div>
+        </div>
+    </div>
+
+    <!-- Next Buses -->
+    <div class="info-card">
+
+        <h2>🚌 Next Buses</h2>
+
+        <div class="bus-list">
+
+            <div class="bus-item">
+                <strong>08:30 AM</strong>
+                <p>KSRTC Super Fast → Munnar</p>
+            </div>
+
+            <div class="bus-item">
+                <strong>09:15 AM</strong>
+                <p>Private Bus → Adimali</p>
+            </div>
+
+            <div class="bus-item">
+                <strong>10:00 AM</strong>
+                <p>KSRTC Ordinary → Kattappana</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Latest Updates -->
+    <div class="info-card">
+
+        <h2>📢 Latest Updates</h2>
+
+        <div class="update-item">
+            🚌 New KSRTC service to Munnar.
+        </div>
+
+        <div class="update-item">
+            🚧 Road work near Adimali.
+        </div>
+
+        <div class="update-item">
+            🌧 Heavy rain warning in Idukki.
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+
+            <h2>Idukki Bus Route</h2>
+
+            <p>
+                Your trusted travel companion for KSRTC and Private Bus services
+                across the beautiful hills of Idukki.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Routes</a></li>
+                <li><a href="#">Time Table</a></li>
+                <li><a href="#">Updates</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-contact">
+
+            <h3>Contact</h3>
+
+            <p>📍 Idukki, Kerala</p>
+            <p>📞 +91 XXXXX XXXXX</p>
+            <p>✉️ info@idukkibusroute.in</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Idukki Bus Route | All Rights Reserved
+    </div>
+
+</footer>
+<script src="/js/search.js"></script>
+<script src="/js/theme.js"></script>
+</body>
+</html>

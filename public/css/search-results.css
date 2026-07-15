@@ -1,0 +1,285 @@
+/* ===========================
+   SEARCH RESULTS PAGE
+=========================== */
+
+body {
+    background: linear-gradient(rgba(18,28,38,0.65), rgba(18,28,38,0.65)),
+                url('/images/background.png') center/cover fixed;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+
+.results-header {
+    width: 90%;
+    max-width: 1200px;
+    margin: 130px auto 30px;
+    color: white;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 18px;
+    text-decoration: none;
+    color: #2ecc71;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    color: white;
+}
+
+.route-summary {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    padding: 25px 30px;
+    color: white;
+}
+
+.route-summary h1 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.route-summary p {
+    margin: 5px 0;
+    font-size: 17px;
+    opacity: .95;
+}
+
+
+/* Results */
+
+.results-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+#results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* Bus Card */
+
+.bus-card {
+
+    background: rgba(255,255,255,.95);
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+
+    transition: .3s;
+
+}
+
+.bus-card:hover{
+
+    transform: translateY(-5px);
+
+}
+
+.bus-name{
+
+    color:#0b7a4b;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+}
+
+
+/* Info Grid */
+
+.bus-info{
+
+    display:grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap:18px;
+
+    margin-bottom:20px;
+
+}
+
+.info-box{
+
+    background:#f3f5f7;
+
+    border-radius:14px;
+
+    padding:18px;
+
+    text-align:center;
+
+}
+
+.info-box h4{
+
+    color:#666;
+
+    margin-bottom:8px;
+
+    font-size:15px;
+
+}
+
+.info-box p{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#222;
+
+}
+
+
+/* Stops */
+
+.route-stops{
+
+    margin-top:20px;
+
+    margin-bottom:20px;
+
+    font-size:17px;
+
+    color:#444;
+
+    line-height:2;
+
+}
+
+
+/* Footer */
+
+.bus-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.status{
+
+    background:#dff7e8;
+
+    color:#14894d;
+
+    padding:10px 18px;
+
+    border-radius:25px;
+
+    font-weight:600;
+
+}
+
+.view-route{
+
+    text-decoration:none;
+
+    background:#16a34a;
+
+    color:rgb(0, 0, 0);
+
+    padding:11px 22px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.view-route:hover{
+
+    background:#12823c;
+
+}
+
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.bus-info{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.bus-info{
+
+grid-template-columns:1fr;
+
+}
+
+.route-summary h1{
+
+font-size:26px;
+
+}
+
+.bus-name{
+
+font-size:24px;
+
+}
+
+.bus-footer{
+
+flex-direction:column;
+
+gap:15px;
+
+align-items:flex-start;
+
+}
+
+}
+/* Route & Time */
+
+.bus-route{
+    color:#333;
+    font-size:16px;
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.bus-times{
+    color:#555;
+    font-size:15px;
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-bottom:15px;
+}
+
+.bus-route strong,
+.bus-times strong{
+    color:#222;
+}

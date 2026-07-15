@@ -1,0 +1,186 @@
+/* ===================================
+   NAVBAR
+=================================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:20px;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+    height:80px;
+}
+
+.navbar .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 35px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+/* LOGO */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo img{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+}
+
+.logo-text h2{
+
+    font-size:24px;
+
+    color:#fff;
+
+    font-weight:700;
+
+}
+
+.logo-text p{
+
+    font-size:13px;
+
+    color:#d1d5db;
+
+}
+
+/* NAVIGATION */
+
+nav{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+nav a:hover,
+
+nav a.active{
+
+    color:#22c55e;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#22c55e;
+
+    transition:.3s;
+
+}
+
+nav a:hover::after,
+
+nav a.active::after{
+
+    width:100%;
+
+}
+
+/* ==========================
+   ADMIN LOGIN BUTTON
+========================== */
+
+.login-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    padding:12px 22px;
+
+    background:#16a34a;
+
+    color:#fff;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    border:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#12823c;
+
+}
+/* MOBILE */
+
+@media(max-width:992px){
+
+    nav{
+
+        display:none;
+
+    }
+
+}

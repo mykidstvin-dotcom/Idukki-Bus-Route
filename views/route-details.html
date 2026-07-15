@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Route Details</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/route-details.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h2>Idukki Bus Route</h2>
+        </div>
+    </nav>
+
+    <!-- Route Details -->
+    <section class="route-details">
+
+        <div class="route-card">
+
+            <h1 id="bus-name">KSRTC Swift Super Fast</h1>
+
+            <span class="status">🟢 Running</span>
+
+            <div class="info">
+
+                <div class="info-box">
+                    <h3>Departure</h3>
+                    <p id="departure-time">08:30 AM</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Bus Type</h3>
+                    <p id="bus-type">Swift Super Fast</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Operator</h3>
+                    <p>KSRTC</p>
+                </div>
+
+            </div>
+
+            <h2>Route Stops</h2>
+
+            <div id="route-stops">
+
+                <!-- Stops will come from JavaScript -->
+
+            </div>
+
+            <div class="back-area">
+
+                <a href="#" id="backBtn" class="back-btn">
+                    ← Back to Search Results
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="/js/route-details.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+/* ===================================
+   INFORMATION SECTION
+=================================== */
+
+.info-section{
+    width:90%;
+    max-width:1400px;
+    margin:70px auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:25px;
+}
+
+.info-card{
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:22px;
+    padding:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.info-card h2{
+    color:#fff;
+    margin-bottom:20px;
+    font-size:24px;
+}
+
+/* Map */
+
+.map-box{
+    width:100%;
+    height:320px;
+    border-radius:18px;
+    overflow:hidden;
+    background:#eef2f7;
+}
+
+.map-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Bus List */
+
+.bus-item{
+    background:rgba(255,255,255,.08);
+    padding:15px;
+    border-radius:15px;
+    margin-bottom:15px;
+    transition:.3s;
+}
+
+.bus-item:hover{
+    background:rgba(255,255,255,.16);
+}
+
+.bus-item strong{
+    color:#22c55e;
+    display:block;
+    margin-bottom:6px;
+}
+
+.bus-item p{
+    color:#fff;
+    margin:0;
+}
+
+/* Updates */
+
+.update-item{
+    background:rgba(255,255,255,.08);
+    padding:15px;
+    border-radius:15px;
+    margin-bottom:15px;
+    color:#fff;
+    transition:.3s;
+}
+
+.update-item:hover{
+    background:rgba(255,255,255,.16);
+}
+
+/* Responsive */
+
+@media(max-width:1000px){
+
+    .info-section{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

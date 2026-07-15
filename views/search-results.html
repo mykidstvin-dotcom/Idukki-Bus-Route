@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Search Results</title>
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/navbar.css">
+<link rel="stylesheet" href="/css/routes.css">
+<link rel="stylesheet" href="/css/search-results.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="container">
+
+<h2>Idukki Bus Route</h2>
+
+</div>
+
+</nav>
+
+<!-- Search Results Header -->
+<section class="results-header">
+
+    <a href="/" class="back-btn">
+        ← Back to Search
+    </a>
+
+    <div class="route-summary">
+
+        <h1 id="route-title">Loading...</h1>
+
+        <p id="route-date"></p>
+
+        <p id="bus-count"></p>
+
+    </div>
+
+</section>
+
+
+<!-- Bus Results -->
+<section class="results-section">
+
+    <div id="results-container">
+
+    </div>
+
+</section>
+
+<script src="/js/bus-data.js"></script>
+<script src="/js/search-results.js"></script>
+
+</body>
+
+</html>

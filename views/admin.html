@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+
+<div class="admin-dashboard">
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+
+        <div class="admin-card">
+
+            <div class="admin-header">
+
+                <h2>Add / Edit Bus</h2>
+
+                <button id="logoutBtn" class="logout-btn">
+                    🚪 Logout
+                </button>
+
+            </div>
+
+            <form id="busForm">
+
+                <input type="text" id="busName" placeholder="Bus Name" required>
+
+                <input type="text" id="operator" placeholder="Operator" required>
+
+                <input type="text" id="type" placeholder="Bus Type" required>
+
+                <input type="text" id="from" placeholder="From" required>
+
+                <input type="text" id="to" placeholder="To" required>
+
+                <input type="time" id="departure" required>
+
+                <input type="time" id="arrival" required>
+
+                <h3>Stops</h3>
+
+                <div id="stopsContainer">
+
+                    <div class="stop-row">
+
+                        <input
+                            type="text"
+                            class="stop-name"
+                            placeholder="Stop Name"
+                        >
+
+                        <input
+                            type="time"
+                            class="stop-time"
+                        >
+
+                    </div>
+
+                </div>
+
+                <button type="button" id="addStopBtn">
+                    + Add Stop
+                </button>
+
+                <button type="submit" id="saveBusBtn">
+                    Save Bus
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel">
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <h3>Total Buses</h3>
+                <span id="totalBuses">0</span>
+            </div>
+
+            <div class="stat-card">
+                <h3>Running</h3>
+                <span id="runningBuses">0</span>
+            </div>
+
+            <div class="stat-card">
+                <h3>KSRTC</h3>
+                <span id="ksrtcBuses">0</span>
+            </div>
+
+            <div class="stat-card">
+                <h3>Private</h3>
+                <span id="privateBuses">0</span>
+            </div>
+
+        </div>
+
+        <div class="admin-card">
+
+            <h2>All Buses</h2>
+
+            <input
+                type="text"
+                id="searchBus"
+                placeholder="🔍 Search buses..."
+            >
+
+            <div id="busList"></div>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="/js/admin.js"></script>
+
+</body>
+</html>

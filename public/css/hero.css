@@ -1,0 +1,347 @@
+/* ===================================
+   HERO SECTION
+=================================== */
+
+.hero{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:160px auto 80px;
+
+    display:grid;
+
+    grid-template-columns:1.2fr 1fr;
+
+    align-items:center;
+
+    gap:60px;
+
+}
+
+.hero-content{
+
+    animation:fadeUp .8s ease;
+
+}
+
+/* Welcome Badge */
+
+.hero-badge{
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    font-size:15px;
+
+    margin-bottom:25px;
+
+}
+
+/* Heading */
+
+.hero h1{
+
+    font-size:72px;
+
+    line-height:1.05;
+
+    font-weight:800;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1 span{
+
+    color:#22c55e;
+
+}
+
+/* Paragraph */
+
+.hero p{
+
+    max-width:620px;
+
+    color:#e5e7eb;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* Search Card */
+
+.search-card{
+
+    margin-top:40px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+    padding:25px;
+
+    background:rgba(255,255,255,.14);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:24px;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.18);
+
+}
+
+/* Inputs */
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.input-group label{
+
+    margin-bottom:10px;
+
+    color:#d1d5db;
+
+    font-size:14px;
+
+}
+
+/*
+.input-group select{
+
+    border:none;
+    outline:none;
+    padding:16px;
+    border-radius:14px;
+    background:white;
+
+}
+*/
+
+.input-group select{
+
+    border:none;
+
+    outline:none;
+
+    padding:16px;
+
+    border-radius:14px;
+
+    background:white;
+
+    font-size:15px;
+
+    width:100%;
+
+    cursor:pointer;
+
+    color:#222;
+
+    appearance:none;
+
+    -webkit-appearance:none;
+
+    -moz-appearance:none;
+
+    transition:.3s;
+
+}
+
+/*
+.input-group select:hover{
+
+    background:#f8fafc;
+
+}
+
+.input-group select:focus{
+
+    box-shadow:0 0 0 3px rgba(34,197,94,.25);
+
+}
+*/
+
+/* Search Button */
+
+.search-btn{
+
+    border:none;
+
+    border-radius:16px;
+
+    background:linear-gradient(135deg,#16a34a,#22c55e);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.search-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(34,197,94,.35);
+
+}
+
+/* Popular Routes */
+
+.popular-routes{
+
+    margin-top:30px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+}
+
+.popular-routes span{
+
+    font-weight:600;
+
+}
+
+.popular-routes a{
+
+    padding:10px 18px;
+
+    border-radius:40px;
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    transition:.3s;
+
+}
+
+.popular-routes a:hover{
+
+    background:#22c55e;
+
+}
+
+/* Bus Image */
+
+.hero-image{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:650px;
+
+    filter:drop-shadow(0 25px 40px rgba(0,0,0,.35));
+
+    animation:floatBus 4s ease-in-out infinite;
+
+}
+
+/* Animations */
+
+@keyframes floatBus{
+
+    0%{transform:translateY(0);}
+
+    50%{transform:translateY(-12px);}
+
+    100%{transform:translateY(0);}
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:1000px){
+
+    .hero{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .hero p{
+
+        margin:auto;
+
+    }
+
+    .search-card{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .popular-routes{
+
+        justify-content:center;
+
+    }
+
+    .hero h1{
+
+        font-size:52px;
+
+    }
+
+}
