@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(session({
 
-    secret: "idukki_bus_route_secret_key",
+   secret: process.env.SESSION_SECRET,
 
     resave: false,
 
