@@ -40,6 +40,16 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "views", "index.html"));
 });
 
+// Privacy Policy
+app.get("/privacy-policy.html", (req, res) => {
+    res.sendFile(path.join(__dirname, "views", "privacy-policy.html"));
+});
+
+// Terms & Conditions
+app.get("/terms-and-conditions.html", (req, res) => {
+    res.sendFile(path.join(__dirname, "views", "terms-and-conditions.html"));
+});
+
 // Search Results
 app.get("/search-results", (req, res) => {
     res.sendFile(path.join(__dirname, "views", "search-results.html"));
