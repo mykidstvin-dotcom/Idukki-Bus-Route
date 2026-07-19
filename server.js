@@ -60,6 +60,10 @@ app.get("/route-details", (req, res) => {
     res.sendFile(path.join(__dirname, "views", "route-details.html"));
 });
 
+app.get("/about.html", (req, res) => {
+    res.sendFile(path.join(__dirname, "views", "about.html"));
+});
+
 // Admin Login
 app.get("/login", (req, res) => {
     res.sendFile(path.join(__dirname, "views", "login.html"));
